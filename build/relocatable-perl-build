@@ -125,6 +125,7 @@ sub perl_build {
         "-Dman3dir=none",
         "-DDEBUGGING=-g",
         "-des",
+        "--static",
     );
     if ($^O eq "linux") {
         # ubuntu 18.04 does not have xlocale.h
